@@ -1,0 +1,1 @@
+The inventory control problem seeks to minimise the cost of ordering resources by determining the quantity and time period in which to order while being restricted by available supplies, required demands, and bounds on arc flows. This can be formulated as a transshipment problem.

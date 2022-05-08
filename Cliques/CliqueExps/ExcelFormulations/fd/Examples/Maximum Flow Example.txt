@@ -1,0 +1,1 @@
+The maximum flow problem is a special case where supplies and demands are all zero but seeks to maximise the flow through the network. This can be formulated as a transshipment problem where flows leaving the source node have a cost of 1.

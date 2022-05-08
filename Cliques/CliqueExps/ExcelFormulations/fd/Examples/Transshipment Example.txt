@@ -1,0 +1,1 @@
+The transshipment problem seeks to minimise or maximise the cost of a set of flows along arcs from origins to intermediate nodes and destinations while being restricted by available supplies, required demands, and bounds on arc flows.
