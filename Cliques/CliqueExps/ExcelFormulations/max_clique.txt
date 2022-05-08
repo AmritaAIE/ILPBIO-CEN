@@ -1,0 +1,58 @@
+Sub some()
+nnodes = Range("Adj!A:A").Cells.SpecialCells(xlCellTypeConstants).Count
+Dim adj As Variant
+
+adj = Range(Range("Adj!B2"), Range("Adj!B2").Offset(nnodes - 1, nnodes - 1))
+
+max_constraints = 100000
+
+num_constraints = 0
+Dim constraints() As Variant
+Dim constraints_idx() As Variant
+ReDim Preserve constraints_idx(1 To max_constraints, 1 To 2) As Variant
+
+
+
+
+
+
+For rw = 1 To nnodes
+For cw = rw To nnodes
+If adj(rw, cw) = 0 Then
+num_constraints = num_constraints + 1
+constraints_idx(num_constraints, 1) = rw
+constraints_idx(num_constraints, 2) = cw
+End If
+Next cw
+Next rw
+
+Range("Optim!B5").Value = num_constraints
+Range("Optim!A5").Value = "Number of constraints"
+
+
+ReDim constraints(1 To num_constraints, 1 To nnodes) As Variant
+
+For rw = 1 To num_constraints
+For cw = 1 To nnodes
+
+
+If cw = constraints_idx(rw, 2) Then
+constraints(rw, cw) = 1
+constraints(rw, constraints_idx(rw, 1)) = 1
+Else
+constraints(rw, cw) = 0
+End If
+
+
+
+
+Next cw
+Next rw
+
+Range(Range("Optim!F5"), Range("Optim!F5").Offset(num_constraints - 1, nnodes - 1)).Value = constraints
+
+
+
+
+End Sub
+

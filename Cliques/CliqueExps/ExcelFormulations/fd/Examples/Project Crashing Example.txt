@@ -1,0 +1,1 @@
+The project crashing problem seeks to minimise the total cost of crashing (reducing) task durations and meet an earlier target completion time while being limited by available resources and task dependencies. Note that if the solver cannot find a feasible solution, this means that the project cannot be crashed to the target time but may still be crashed.

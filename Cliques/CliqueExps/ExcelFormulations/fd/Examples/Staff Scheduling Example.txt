@@ -1,0 +1,1 @@
+The staff scheduling problem seeks to find a way to assign staff to shifts while satisfying rostering requirements to minimise or maximise an objective function such as the total number of staff or hours.

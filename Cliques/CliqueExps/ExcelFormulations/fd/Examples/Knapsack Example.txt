@@ -1,0 +1,1 @@
+The knapsack problem is an integer program that seeks to select the best choice of objects to put into the "knapsack" to maximise its value while satisfying the knapsack's constraints such as weight or volume restrictions.

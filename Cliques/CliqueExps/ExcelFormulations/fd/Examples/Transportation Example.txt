@@ -1,0 +1,1 @@
+The transportation problem seeks to minimise or maximise the cost of a set of flows along arcs directly from origins to destinations while being restricted by available supplies, required demands, and bounds on arc flows.

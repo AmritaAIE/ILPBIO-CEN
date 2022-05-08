@@ -1,0 +1,1 @@
+The cutting stock problem seeks to determine the number of standard-sized pieces of stock material to process using each cutting pattern to meet the required orders while minimising the material wasted.

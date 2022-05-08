@@ -1,0 +1,1 @@
+The facility location problem seeks to minimise or maximise the cost of a set of flows along arcs directly from origins to destinations by determining where to set up facilities while being restricted by available supplies, required demands, and bounds on arc flows.
